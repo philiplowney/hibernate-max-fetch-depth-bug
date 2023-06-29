@@ -1,5 +1,7 @@
 # Hibernate 6 Upgrade Issue with `max_fetch_depth` Parameter
 
+_Note that this has been logged on the Hibernate ORM issue tracker: https://hibernate.atlassian.net/browse/HHH-16871_
+
 ## Outline
 We have recently upgraded to Hibernate 6.2.5.Final. After updating, we noted an issue related to the `max_fetch_depth` parameter:
 
