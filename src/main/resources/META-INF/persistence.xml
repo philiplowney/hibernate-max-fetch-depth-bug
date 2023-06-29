@@ -1,0 +1,47 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
+             version="3.1">
+
+    <persistence-unit name="persistenceUnitFetchDepth0" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="0"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitFetchDepth1" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="1"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitFetchDepth2" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="2"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitFetchDepth3" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="3"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitFetchDepth4" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="4"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="persistenceUnitFetchDepth5" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.max_fetch_depth" value="5"/>
+        </properties>
+    </persistence-unit>
+</persistence>
