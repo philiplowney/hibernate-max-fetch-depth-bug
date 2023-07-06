@@ -9,9 +9,6 @@ public class FormOption {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="\"order\"")
-    private Integer order;
-
     @ManyToOne(optional = false)
     @JoinColumn(name = "stepConfiguration_id", foreignKey = @ForeignKey(name = "FK_FormOption_StepConfiguration"))
     private StepConfiguration configuration;
@@ -36,14 +33,6 @@ public class FormOption {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Integer getOrder() {
-        return order;
-    }
-
-    public void setOrder(Integer order) {
-        this.order = order;
     }
 
     public StepConfiguration getConfiguration() {
