@@ -3,7 +3,7 @@
 _Note that this has been logged on the Hibernate ORM issue tracker: https://hibernate.atlassian.net/browse/HHH-16871_
 
 ## Outline
-We have recently upgraded to Hibernate 6.2.5.Final. After updating, we noted an issue related to the `max_fetch_depth` parameter:
+We have recently upgraded to Hibernate 6.2.6.Final. After updating, we noted an issue related to the `max_fetch_depth` parameter:
 
 Depending on the value of `max_fetch_depth`, entity relationships defined on fetched entities were being set to **null** rather than initialised with a proxy.
 This appears to be a bug to us because there is no way to now distinguish between absent data and data that should be lazily loaded.
